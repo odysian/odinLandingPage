@@ -92,3 +92,55 @@ li {
     max-width: 400px;
     height: auto;
 }
+.service-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.service-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    max-width: 300px;
+    
+}
+.service-header {
+    text-align: center;
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 900;
+    margin: 40px 0;
+}
+.service-img {
+    max-width: 200px;
+    height: auto;
+    margin: 20px;
+    border:#2563eb 3px solid;
+    border-radius: 10px;
+}
+.service-desc {
+    text-align: center;
+    color: #1f2937;
+    font-size: 16px;
+    margin: 20px;
+}
+.quote-section {
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    text-align: left;
+    max-width: 800px;
+    margin: 100px 40px 0 40px;
+}
+.quote-author {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    margin: 2px 40px;
+}
