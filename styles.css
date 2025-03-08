@@ -27,7 +27,6 @@ nav {
     list-style: none;
     gap: 18px;
     text-wrap: nowrap;
-    
 }
 li {
     margin: 0;
@@ -41,7 +40,6 @@ li {
     text-decoration: none;
     padding: 18px;
     margin: 10px;
-
 }
 .nav-links:hover {
     color: #f9faf8;
@@ -52,6 +50,18 @@ li {
     header {
         flex-direction: column;
         align-items: center;
+        gap: 4px;
+        padding-top: 4px;
+    }
+    .logo {
+        font-size: 18px;
+        padding: 4px;
+    }
+    .nav-list {
+        padding: 16px;
+    }
+    .nav-links {
+        font-size: 16px;
     }
 }
 .hero {
@@ -62,8 +72,8 @@ li {
     flex-wrap: wrap;
     background-image: url(../img/herocat.jpg);
     background-size: cover;
-    background-position: 70% center;
-    min-height: 400px;
+    background-position: top;
+    min-height: 600px;
 }
 @media (max-width: 768px) {
     .hero {
@@ -101,11 +111,6 @@ li {
 .hero-btn:hover {
     background-color: #2563eb;
 }
-/* .space {
-    display: flex;
-    width: 100%;
-    height: 200px;
-} */
 .hero-img {
     max-width: 400px;
     margin-left: 20px;
@@ -181,6 +186,7 @@ li {
     gap: 20px;
     align-items: center;
     flex-wrap: wrap;
+    border-radius: 10px;
 }
 .cta-text {
     max-width: 300px;
