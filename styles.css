@@ -40,6 +40,7 @@ li {
     text-decoration: none;
     padding: 18px;
     margin: 10px;
+
 }
 .nav-links:hover {
     color: #f9faf8;
@@ -49,15 +50,25 @@ li {
 .hero {
     background: #1f2937;
     display: flex;
-    justify-content: center;   
+    justify-content: flex-start;   
     padding: 80px 0;
     flex-wrap: wrap;
+    background-image: url(../img/herocat.jpg);
+    background-size: cover;
+    background-position: 70% center;
+    min-height: 400px;
+}
+@media (max-width: 768px) {
+    .hero {
+        padding: 40px 0;
+        min-height: 300px; 
+    }
 }
 .hero-text {
     display: flex;
     flex-direction: column;
     max-width: 400px;
-    margin: 20px;
+    margin: 20px 20px 20px 40px;
     gap: 10px;
 }
 .hero-h1 {
@@ -83,9 +94,14 @@ li {
 .hero-btn:hover {
     background-color: #2563eb;
 }
+/* .space {
+    display: flex;
+    width: 100%;
+    height: 200px;
+} */
 .hero-img {
     max-width: 400px;
-    margin: 20px;
+    margin-left: 20px;
     height: auto;
 }
 .hero-img-div {
@@ -130,6 +146,9 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+    margin: 0 auto;
 }
 .quote-text {
     font-size: 36px;
@@ -142,5 +161,36 @@ li {
     font-size: 24px;
     font-weight: bold;
     text-align: right;
-    margin: 2px 40px;
+    margin: 10px 0 0 40px;
+    padding-left: 60px;
+}
+.cta {
+}
+.cta-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    margin: 40px auto;
+    background-color: #3882f6;
+    padding: 40px;
+}
+.cta-p, .cta-bold {
+    color: #f9faf8;
+    font-size: 16px;
+}
+.cta-bold {
+    font-weight: bold;
+    font-size: 24px;
+}
+.cta-btn {
+    background-color: #3882f6;
+    color: #f9faf8;
+    max-width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border: 3px solid #f9faf8;
+    padding: 5px;
 }
