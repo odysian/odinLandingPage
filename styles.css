@@ -67,12 +67,13 @@ li {
 .hero {
     background: #1f2937;
     display: flex;
-    justify-content: flex-start;   
+    justify-content: center;   
+    align-items: center;
     padding: 80px 0;
     flex-wrap: wrap;
-    background-image: url(../img/herocat.jpg);
+    /* background-image: url(../img/herocat.jpg);
     background-size: cover;
-    background-position: top;
+    background-position: top; */
     min-height: 600px;
 }
 @media (max-width: 768px) {
@@ -113,8 +114,9 @@ li {
 }
 .hero-img {
     max-width: 400px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     height: auto;
+    width: 100%;
 }
 .hero-img-div {
     max-width: 400px;
@@ -174,7 +176,8 @@ li {
     font-weight: bold;
     text-align: right;
     margin: 10px 0 0 40px;
-    padding-left: 60px;
+    padding-left: 40px;
+    padding-right: 10px;
 }
 .cta-container {
     display: flex;
@@ -190,6 +193,9 @@ li {
 }
 .cta-text {
     max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .cta-p, .cta-bold {
     color: #f9faf8;
